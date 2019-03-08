@@ -1,10 +1,12 @@
 package com.udec.ejerciciopoliformismo;
 
+import interfaz.IVehiculo;
+
 /**
  * Esta es la clase padre de vehiculos
  * @author David
  */
-  public abstract class Vehiculo {
+  public abstract class Vehiculo implements IVehiculo{
     
     /**
      * guarda el dato de la marca del vehiculo
@@ -59,8 +61,16 @@ package com.udec.ejerciciopoliformismo;
     }
     
     public void imprimir(){
-        System.out.println("\nSoy el padre");
+        System.out.println("\nSoy el padre y estoy imprimiendo desde Vehiculo");
     }
     
+    @Override
+    public void encender(){
+        System.out.println("Estoy encendido y estoy imprimiendo desde la clase Vehiculo");
+    }
     
+    @Override
+    public void apagar(){
+        System.out.println("Estoy apagado y estoy imprimiendo desde la clase Vehiculo");
+    }
 }

@@ -9,7 +9,7 @@ package com.udec.ejerciciopoliformismo;
  *
  * @author David
  */
-public class Bicicletas extends Vehiculo{
+public class Bicicleta extends Vehiculo{
 
     /**
      * captura el numero de cambios 
@@ -22,7 +22,7 @@ public class Bicicletas extends Vehiculo{
      * @param modelo = guarda el modelo de la cicla 
      * @param numeroCambios = guarda el numero de cmabios de la cicila 
      */
-    public Bicicletas(String marca, String modelo, int numeroCambios) {
+    public Bicicleta(String marca, String modelo, int numeroCambios) {
         super(marca, modelo);
         this.numeroCambios = numeroCambios;
     }
@@ -43,7 +43,7 @@ public class Bicicletas extends Vehiculo{
         this.numeroCambios = numeroCambios;
     }
 
-    
+   
     public void imprimirBicicleta() {
         System.out.println("\n Soy Bicicletas y mi modelo es: "+modelo+"\ny mi marca es: "+marca+"\n y mi numero de cambios es:"+numeroCambios);
    }

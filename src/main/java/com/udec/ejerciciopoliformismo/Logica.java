@@ -18,7 +18,7 @@ public class Logica {
     
     public void insertar(){
         Vehiculo skate = new Skateboard("tiger","LongBoard", 1.20);
-        Vehiculo bicibleta = new Bicicletas("guepard", "todo terreno", 10);
+        Vehiculo bicibleta = new Bicicleta("guepard", "todo terreno", 10);
         Vehiculo carro = new  Carro("ferrari", "gt320", "solo alta reactancia", 500);
         Vehiculo jet = new Jet("F-22", "combate largo alcance", "combustible de alta potencia", 2);
     
@@ -32,21 +32,29 @@ public class Logica {
             if(vehiculo instanceof Skateboard){
                 Skateboard skat = (Skateboard) vehiculo;
                 skat.imprimir();
-                skat.imprimirSkate();     
-            }else if(vehiculo instanceof Bicicletas){
-                Bicicletas bici= (Bicicletas) vehiculo;
+                skat.imprimirSkate();  
+                skat.encender();
+                skat.apagar();
+            }else if(vehiculo instanceof Bicicleta){
+                Bicicleta bici= (Bicicleta) vehiculo;
                 bici.imprimir();
                 bici.imprimirBicicleta();
+                bici.encender();
+                bici.apagar();
             }else if(vehiculo instanceof Carro){
                 Carro car = (Carro) vehiculo;
                 car.imprimir();
                 car.impresionVehiculoPotenciado();
                 car.imprimirCarro();
+                car.encender();
+                car.apagar();
             }else if(vehiculo instanceof Jet){
                 Jet avion = (Jet)vehiculo;
                 avion.imprimir();
                 avion.impresionVehiculoPotenciado();
                 avion.imprimirJet();
+                avion.encender();
+                avion.apagar();
             }
         }
     

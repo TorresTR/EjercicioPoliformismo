@@ -39,6 +39,27 @@ public class Carro  extends VehiculoPotenciado{
         this.tamanoMotor = tamanoMotor;
     }
 
+    @Override
+     public void imprimir(){
+        System.out.println("\nSoy el padre Vehiculo imprimiendo desde la clase Carro");
+    }
+    
+    
+    @Override
+    public void impresionVehiculoPotenciado(){
+    
+        System.out.println("\nSoy VehiculoPotenciado y estoy imprimiendo desde la calse carro");
+    }
+   
+    @Override
+    public void encender(){
+        System.out.println("EL carro se prendio");
+    }
+    
+    @Override
+    public void apagar(){
+        System.out.println("EL carro se apago");
+    }
     
     public void imprimirCarro() {
         System.out.println("\nSoy un carro de modelo: "+modelo+"\n y mi marca es: "+marca+"\n mi tipo de combistible es:"

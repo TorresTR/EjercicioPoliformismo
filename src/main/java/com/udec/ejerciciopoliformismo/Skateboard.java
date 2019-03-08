@@ -39,7 +39,15 @@ public class Skateboard extends Vehiculo{
         this.largoSkateboard = largoSkateboard;
     }
 
+    @Override
+    public void encender(){
+        System.out.println("Los Skateboard no se necesitan encender");
+    }
     
+    @Override
+    public void apagar(){
+        System.out.println("Los Skateboard no se necesitan apagar");
+    }
     
     public void imprimirSkate() {
         System.out.println("\n Soy skateboard y mi modelo es: "+modelo+"\n mi marca es: "+marca+"\n y mi tamño de skate es: "+largoSkateboard);
