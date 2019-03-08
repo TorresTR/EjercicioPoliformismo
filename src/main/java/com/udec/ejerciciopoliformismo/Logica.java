@@ -65,9 +65,9 @@ public class Logica {
                 car.apagar();
             }else if(vehiculo instanceof Jet){
                 Jet avion = (Jet)vehiculo;
+                avion.imprimirJet();
                 avion.imprimir();
                 avion.impresionVehiculoPotenciado();
-                avion.imprimirJet();
                 avion.encender();
                 avion.apagar();
             }

@@ -61,6 +61,7 @@ public class Jet extends VehiculoPotenciado{
      * metodo que imprime los datos de los Jets
      */
     public void imprimirJet() {
+        System.out.println("------------------jet-----------------------");
         System.out.println("\n Soy un jet de tipo:"+
                 marca+"\n mi modelo es:"+modelo+"\n mi tipo de combustible: "+tipoCombustible + "\n mi numero de turbinas es: "
         + numeroTurbinas);
