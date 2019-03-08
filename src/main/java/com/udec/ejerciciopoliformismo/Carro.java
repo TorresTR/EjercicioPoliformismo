@@ -39,28 +39,43 @@ public class Carro  extends VehiculoPotenciado{
         this.tamanoMotor = tamanoMotor;
     }
 
+    /**
+     * metodo especializado en la clase carro, que trae de la clase Vehiculos
+     */
     @Override
      public void imprimir(){
+        System.out.println("\n-----------Carro------------------");
         System.out.println("\nSoy el padre Vehiculo imprimiendo desde la clase Carro");
     }
     
-    
+    /**
+     * metodo especializado en la clase carro que trae de VehiculoPotenciado
+     */
     @Override
     public void impresionVehiculoPotenciado(){
     
         System.out.println("\nSoy VehiculoPotenciado y estoy imprimiendo desde la calse carro");
     }
    
+    /**
+     * metodo Encender especializado de la interfaz
+     */
     @Override
     public void encender(){
         System.out.println("EL carro se prendio");
     }
     
+    /**
+     * metodo apagar especializado de la interfaz
+     */
     @Override
     public void apagar(){
         System.out.println("EL carro se apago");
     }
     
+    /**
+     * metodo que imprime los datos de los vehiculos
+     */
     public void imprimirCarro() {
         System.out.println("\nSoy un carro de modelo: "+modelo+"\n y mi marca es: "+marca+"\n mi tipo de combistible es:"
         + tipoCombustible+"\n mi tamaño del motor es: "+ tamanoMotor);

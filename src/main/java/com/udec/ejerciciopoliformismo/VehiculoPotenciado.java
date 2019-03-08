@@ -1,7 +1,7 @@
 package com.udec.ejerciciopoliformismo;
 
 /**
- *
+ * Esta Clase es hoja de vehiculo pero a su vez es padre de Carro y jet
  * @author David
  */
 abstract class VehiculoPotenciado extends Vehiculo{
@@ -38,7 +38,9 @@ abstract class VehiculoPotenciado extends Vehiculo{
         this.tipoCombustible = tipoCombustible;
     }
     
-    
+    /**
+     * metodo que relaiza un impresion de vehiculo potenciado
+     */
     public void impresionVehiculoPotenciado(){
     
         System.out.println("\nsoy una hija de vehiculo pero a la vez padre de carro y jet");

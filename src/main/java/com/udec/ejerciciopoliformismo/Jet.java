@@ -39,29 +39,44 @@ public class Jet extends VehiculoPotenciado{
         this.numeroTurbinas = numeroTurbinas;
     }
 
+    /**
+     * metodo especializado en la clase Jet, que trae de la clase Vehiculos
+     */
     @Override
      public void imprimir(){
+        System.out.println("\n-----------Jet------------------");
         System.out.println("\nSoy el padre Vehiculo imprimiendo desde la clase Jet");
     }
     
     
+    /**
+     * metodo especializado en la clase Jet que trae de VehiculoPotenciado
+     */
     @Override
     public void impresionVehiculoPotenciado(){
     
         System.out.println("\nSoy vehiculoPotenciado y estoy imprimiendo desde la calse Jet");
     }
     
+    /**
+     * metodo Encender especializado de la interfaz
+     */
     @Override
     public void encender(){
-        System.out.println("EL Jet se encendio y esta a su maxima potencia");
+        System.out.println("\n-----EL Jet se encendio y esta a su maxima potencia-----");
     }
     
+    /**
+     * metodo apagar especializado de la interfaz
+     */
     @Override
     public void apagar(){
-        System.out.println("EL Jet se apago sus turbinas");
+        System.out.println("\n------EL Jet se apago sus turbinas------");
     }
     
-    
+    /**
+     * metodo que imprime los datos de los Jets
+     */
     public void imprimirJet() {
         System.out.println("\n Soy un jet de tipo:"+
                 marca+"\n mi modelo es:"+modelo+"\n mi tipo de combustible: "+tipoCombustible + "\n mi numero de turbinas es: "

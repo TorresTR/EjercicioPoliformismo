@@ -39,16 +39,31 @@ public class Skateboard extends Vehiculo{
         this.largoSkateboard = largoSkateboard;
     }
 
+    /**
+     * imprime un separador para dar inicio de la clase SkateBoard
+     */
+    public void imprimirSeparador(){
+        System.out.println("\n---------------------SkateBoard-----------------------");
+    }
+    /**
+     * Metodo especializado encender de la interfaz 
+     */
     @Override
     public void encender(){
         System.out.println("Los Skateboard no se necesitan encender");
     }
     
+    /**
+     * metodo especializado apagar  de la interfaz
+     */
     @Override
     public void apagar(){
         System.out.println("Los Skateboard no se necesitan apagar");
     }
     
+    /**
+     * Metodo que imprime la skateboard desde la clase SkateBoard
+     */
     public void imprimirSkate() {
         System.out.println("\n Soy skateboard y mi modelo es: "+modelo+"\n mi marca es: "+marca+"\n y mi tamño de skate es: "+largoSkateboard);
     }

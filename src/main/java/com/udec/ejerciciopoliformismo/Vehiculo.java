@@ -3,7 +3,7 @@ package com.udec.ejerciciopoliformismo;
 import interfaz.IVehiculo;
 
 /**
- * Esta es la clase padre de vehiculos
+ * Esta es la clase padre y Contiene los datos basicos de para los vehiculos
  * @author David
  */
   public abstract class Vehiculo implements IVehiculo{
@@ -60,15 +60,25 @@ import interfaz.IVehiculo;
         this.modelo = modelo;
     }
     
+    /**
+     * Metodo que imprime desde el padre
+     */
     public void imprimir(){
+        
         System.out.println("\nSoy el padre y estoy imprimiendo desde Vehiculo");
     }
     
+    /**
+     * metodo Encendido especializado, de la interfaz en la clase Vehiculo
+     */
     @Override
     public void encender(){
         System.out.println("Estoy encendido y estoy imprimiendo desde la clase Vehiculo");
     }
     
+    /**
+     * metodo Apagado especializado, de la interfaz en la clase Vehiculo
+     */
     @Override
     public void apagar(){
         System.out.println("Estoy apagado y estoy imprimiendo desde la clase Vehiculo");

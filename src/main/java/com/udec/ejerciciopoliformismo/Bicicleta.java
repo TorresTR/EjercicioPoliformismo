@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.udec.ejerciciopoliformismo;
 
 /**
- *
+ * Esta clase se encarga de los datos y metodos de Bicileta
  * @author David
  */
 public class Bicicleta extends Vehiculo{
@@ -43,7 +38,15 @@ public class Bicicleta extends Vehiculo{
         this.numeroCambios = numeroCambios;
     }
 
-   
+    /**
+     * imprime un separador para dar inicio de la clase Bicicleta
+     */
+    public void imprimirSeparador(){
+        System.out.println("\n---------------------Bicicleta-----------------------");
+    }
+   /**
+    * Metodo que imprime la bicicleta 
+    */
     public void imprimirBicicleta() {
         System.out.println("\n Soy Bicicletas y mi modelo es: "+modelo+"\ny mi marca es: "+marca+"\n y mi numero de cambios es:"+numeroCambios);
    }
